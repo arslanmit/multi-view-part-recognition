@@ -335,7 +335,7 @@ class Dataset(data.Dataset):
                     for i in range(3):
                         means[i].append(np.mean(depth[i, :, :]))
                         stds[i].append(np.std(depth[i, :, :]))
-        if not args.depth2hha:
+        if not self.args.depth2hha:
             mean = float(np.mean(means))
             std = float(np.mean(stds))
         else:

@@ -268,15 +268,11 @@ def main(args):
     logs['acc_test'] = metrics[bestk].result()
     logs['loss_test'] = float(np.mean(losses))
     print('Test loss: {}'.format(logs['loss_test']))
-    #all_logs[str(weight_error)] = logs
-
-
-    #with open(logs_dir, 'w') as f:
-    #    json.dump(all_logs, f)
+    with open(logs_dir, 'w') as f:
+        json.dump(logs, f)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('MultiView training script', parents=[get_args_parser()])
     args = parser.parse_args()
     main(args)
-

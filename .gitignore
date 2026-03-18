@@ -1,9 +1,22 @@
-.idea
-venv
-industrial_part_recognition
-results*
-__pycache__
+# OS / editor
+.DS_Store
+.idea/
+
+# Python environments
+venv/
+.venv/
+.venv310/
+
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Project-local outputs and legacy dirs
+industrial_part_recognition/
+results*/
 new2/
 res_old/
-MVIP/*
-MVIP
+
+# Local dataset copies
+MVIP/
