@@ -14,9 +14,11 @@ __pycache__/
 
 # Project-local outputs and legacy dirs
 industrial_part_recognition/
+results/
 results*/
 new2/
 res_old/
+*.ckpt
 
 # Local dataset copies
 MVIP/
