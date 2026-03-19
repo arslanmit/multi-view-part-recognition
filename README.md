@@ -71,3 +71,5 @@ python3 plot_logs.py --outdir ./results/run001 --name run001
 - This repository does not currently include a `pytest` suite or CI pipeline; `test*.py` scripts are experiment/evaluation runners.
 - Several scripts contain hardcoded path defaults. Prefer passing CLI arguments explicitly (`--path`, `--outdir`, `--name`).
 - Many boolean CLI flags use `argparse` with `type=bool`, which can be unintuitive when overridden from the command line.
+- Sample `run_real` checkpoints are stored as split parts in `checkpoints/run_real/` to comply with GitHub's 100MB file limit. Reconstruct with:
+  `bash reconstruct_run_real_checkpoints.sh`
