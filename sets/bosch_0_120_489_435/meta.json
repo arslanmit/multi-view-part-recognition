@@ -1,0 +1,1 @@
+{"size": [188.0, 155.0, 140.0], "weight": 4.712, "description": {"Shapes": ["Round", "cilinder", "Pointy"], "Colours": ["Grey"], "Materials": ["Iron"], "Texture": ["rough"], "Conditions": ["Old", "Dirty"], "size": ["Medium"], "weight": ["Medium"], "density": ["Medium"]}, "name": "bosch_0_120_489_435", "background_id": "000006", "super_class": ["CarComponent", "Generator"]}
