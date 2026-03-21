@@ -1,0 +1,5 @@
+{
+  "dataset_path": "./MVIP/sets",
+  "results_path": "./results",
+  "checkpoints_path": "./checkpoints"
+}

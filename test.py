@@ -11,6 +11,7 @@ from models.multiview import get_model
 import torch.optim.lr_scheduler as schedulers
 from utils.metric import TopKAccuracy
 from utils.stuff import bar_progress, lookup, load_fitting_state_dict
+from utils.config import get_dataset_path
 import time
 import math
 import sys
@@ -45,7 +46,7 @@ def get_args_parser():
     parser.add_argument('--topk', default='1-3-5', type=str)
 
     # dataset
-    parser.add_argument('--path', default='./MVIP/sets', type=str)
+    parser.add_argument('--path', default=get_dataset_path(), type=str)
     parser.add_argument('--roicrop', default=True, type=bool)
     parser.add_argument('--shuf_views', default=False, type=bool)
     parser.add_argument('--shuf_views_cw', default=True, type=bool)

@@ -20,5 +20,8 @@ new2/
 res_old/
 *.ckpt
 
+# Local config (machine-specific paths)
+config.json
+
 # Local dataset copies
 MVIP/
